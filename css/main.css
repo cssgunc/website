@@ -116,6 +116,11 @@ body{
     margin:0;
     background-color: #f4f4f4;
 }
+
+h1{
+    font-size: 2.5em;
+}
+
 .container{
     width: 80%;
     display:inline;
@@ -132,8 +137,8 @@ header{
     background: #353637;
     /*background: rgba(225, 225, 225, 1);*/
     color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
+    padding-top: 15px;
+    min-height: 50px;
     border-bottom: #32a0c2 3px solid;
 }
 header a{
@@ -143,7 +148,6 @@ header a{
     font-size: 16px;
 }
 header li{
-    float: left;
     display: inline;
     padding: 0 20px 0 20px;
     /*width: calc(100%/4);        !* Number of links in Nav*!*/
@@ -151,17 +155,18 @@ header li{
 }
 
 header nav{
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
-    display: inline-block;
+    list-style: none;
+    display: inline;
+    /*font: 15px/1.5 Arial, Helvetica, sans-serif;*/
 }
+
 header .current a{
     color: #32a0c2;
     font-weight: bold;
 }
+
 header a:hover{
     color: #cccccc;
     font-weight: bold;
@@ -169,11 +174,10 @@ header a:hover{
 
 #title {
     font-size: 25px;
-}
-
-.iconContainer {
-    display: inline-block;
-    float:left;
+    margin-right: 20px;
+    width: auto;
+    display: inline;
+    float:right;
 }
 
 .icon {
@@ -181,7 +185,6 @@ header a:hover{
     width: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    display: inline-block;
 }
 
 .iconImg {
@@ -193,7 +196,7 @@ header a:hover{
 #majorThird {
   width: 100%;
   overflow: auto;
-  min-height: 60%;
+  min-height: 400px;
 }
 
 /* Minor Third Section */
@@ -205,6 +208,11 @@ header a:hover{
 }
 #socialFeed h1 {
   
+}
+
+.container h1 {
+    margin:auto;
+    text-align: center;
 }
 
 /* Showcase */
@@ -245,20 +253,27 @@ header a:hover{
     background: #353637;
 }
 #signUp h1{
-    /*float: left;*/
+    float: left;
     margin:auto;
 }
 .signUpContainer{
     display: inline-block;
+    margin: 15px auto auto;
+    overflow: hidden;
 }
 
 .submit_button{
-    height: 38px;
+    height: 2.5em;
     background: #cccccc;
-    margin: auto;
+    margin-left: 20px;
+    float:right;
     border: 0;
+    display: inline-block;
+    margin-top:9px;
+    margin-bottom:9px;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 12px;
     color: #353637;
 }
 
