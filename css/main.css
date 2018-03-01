@@ -151,12 +151,23 @@ header a:hover{
     font-weight: bold;
 }
 
-#icon {
-    background:url('../img/logo.png') no-repeat center;
-    height: 20px;
-    width: 20px;
+#title {
+    font-size: 25px;
+}
+
+.icon {
+    height: 25px;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: inline-block;
+    float: left;
     /* Other styles here */
+}
+
+.iconImg {
+    height: 25px;
+    width: 50px;
 }
 
 /* Showcase */
