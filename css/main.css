@@ -122,54 +122,87 @@ h1{
 }
 
 .container{
-    width: 80%;
-    display:inline;
-    margin: auto;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 ul{
     margin: 0;
     padding: 0;
 }
 
-/* Header */
-header{
-    background: #353637;
-    /*background: rgba(225, 225, 225, 1);*/
-    color: #ffffff;
-    padding-top: 15px;
-    min-height: 50px;
-    border-bottom: #32a0c2 3px solid;
+/* Navigation */
+/* Navbar is implemented as flexbox */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100%;
 }
-header a{
+
+.navlink{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    min-height: 100%;
+}  
+
+#current{
+    background: #777b7f;
+}
+
+.navlink:hover{
+    background: #777b7f;
+}
+
+.navlink a{
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-}
-header li{
-    display: inline;
-    padding: 0 20px 0 20px;
-    /*width: calc(100%/4);        !* Number of links in Nav*!*/
-    text-align: center;
+    padding: 20px 20px 20px 20px;
 }
 
-header nav{
-    margin-left: 20px;
-    margin-right: auto;
-    list-style: none;
-    display: inline;
-    /*font: 15px/1.5 Arial, Helvetica, sans-serif;*/
+.navlink a:hover{
+    color: #32c19b;
 }
 
-header .current a{
-    color: #32a0c2;
-    font-weight: bold;
+.navdropdown{
+
 }
 
-header a:hover{
-    color: #cccccc;
-    font-weight: bold;
+/* Header */
+
+header{
+    background: #353637;
+    color: #ffffff;
+    border-bottom: #32a0c2 3px solid;
+}
+
+header .container{
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+/* Some Fun */
+.iconImg:hover{
+   -webkit-animation: adjustHue 1s alternate infinite;
+}
+
+.iconImg:active{
+    -webkit-animation: rotateObject 2s infinite;
+}
+     
+@-webkit-keyframes adjustHue {
+   0% { -webkit-filter: hue-rotate(30deg); }
+   50% { -webkit-filter: hue-rotate(60deg); }
+   100% { -webkit-filter: hue-rotate(90deg); }   
+}
+
+@-webkit-keyframes rotateObject {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
 }
 
 #title {
