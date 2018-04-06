@@ -262,11 +262,13 @@ header .container{
 #showcase .container{
 
 }
+
 #showcase h1{
     margin-top: 100px;
     font-size: 55px;
     margin-bottom: 10px;
 }
+
 #showcase p{
     font-size: 25px;
     margin-top: 20%;
@@ -276,7 +278,7 @@ header .container{
 }
 
 
-/* Newsletter */
+/* SignUp */
 #signUp{
     width: 100%;
     text-align: center;
@@ -289,6 +291,7 @@ header .container{
     float: left;
     margin:auto;
 }
+
 .signUpContainer{
     display: inline-block;
     margin: 15px auto auto;
@@ -337,8 +340,15 @@ footer{
 /* About Us */
 
 article#main-col{
-    width: 80%;
+    width: 90%;
+    margin: auto;
 }
+
+/* Default Main Section */
+.main {
+    margin: 10px;
+}
+
 
 /* ==========================================================================
    Helper classes
