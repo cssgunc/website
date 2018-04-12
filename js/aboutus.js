@@ -20,3 +20,8 @@ function constructImagePanes () {
     }
     return html;
 }
+
+$(document).ready(function () {
+    var pictures = constructImagePanes();
+    $(".picture-container").append(pictures);
+})

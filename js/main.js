@@ -9,7 +9,7 @@ function constructImagePanes () {
             $(data).find("a").attr("href", function (i, val) {
                 if (val.match(/\.(jpe?g|png)$/)) {
                     var itemHtml = '<div class="column">'
-                        + '<img src='+files[i] +'>'
+                        + '<img src='+val +'>'
                         + '</div>';
                     var $itemHtml = $(itemHtml);
                     html.append($itemHtml);
