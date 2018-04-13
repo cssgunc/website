@@ -145,7 +145,7 @@ ul{
     align-items: center;
     align-content: center;
     min-height: 100%;
-}  
+}
 
 #current{
     background: #777b7f;
@@ -193,11 +193,11 @@ header .container{
 .iconImg:active{
     -webkit-animation: rotateObject 2s infinite;
 }
-     
+
 @-webkit-keyframes adjustHue {
    0% { -webkit-filter: hue-rotate(30deg); }
    50% { -webkit-filter: hue-rotate(60deg); }
-   100% { -webkit-filter: hue-rotate(90deg); }   
+   100% { -webkit-filter: hue-rotate(90deg); }
 }
 
 @-webkit-keyframes rotateObject {
@@ -240,12 +240,13 @@ header .container{
   background-color: rgba(75, 156, 211, 1);
 }
 #socialFeed h1 {
-  
+
 }
 
 .container h1 {
     margin:auto;
     text-align: center;
+    height: 55px;
 }
 
 /* Showcase */
